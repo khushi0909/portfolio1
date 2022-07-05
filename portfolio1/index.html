@@ -5,22 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
+<!-- page loader starts -->
+<div class="page-loader">
+    <div></div>
+    <div></div>
+
+    <div></div>
+
+</div>
+<!-- page loader ends-->
+
+<!-- background circles start  -->
+<div class="bg-circles">
+    <div class="circle-1"> </div>
+    <div class="circle-2"> </div>
+    <div class="circle-3"> </div>
+
+    <div class="circle-4"> </div>
+</div>
+<!-- background circles ends  -->
+
+
+    <!-- overlay Start -->
+    <div class="overlay">
+
+    </div>
+    <!-- Overlay End -->
 <!-- Main Start -->
-    <div class="main">
+    <div class="main hidden">
+
+
+    <!-- Header Starts -->
+<div class="header">
+    <div class="container">
+        <div class="row flex-end">
+            <button type="button" class="nav-toggler">
+                <span></span>
+            </button>
+            <div class="nav">
+                <div class="nav-inner">
+                    <ul>
+                        <li><a href="#home" class="nav-item link-item">home</a></li>
+                        <li><a href="#about" class="nav-item link-item">about</a></li>
+                        <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                        <li><a href="#contact" class="nav-item link-item">contact</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <!-- Header Ends -->
+
         <!-- Home Section Starts  -->
-        <section class="home-section align-items-center hidden">
+        <section class="home-section align-items-center " id="home">
             <div class="container">
                         <div class="row align-items-center">
                               <div class="home-text">
                                     <p>Hello,I'm</p>
                                      <h1>Khushboo Khatwani</h1>
                                      <h2>frontend web developer</h2>
-                                    <a href="#" class="btn">more about me </a>
-                                    <a href="#" class="btn">portfolio </a>
+                                    <a href="#about" class="btn link-item">more about me </a>
+                                    <a href="#portfolio" class="btn link-item">portfolio </a>
 
                              </div>
                              <div class="home-img">
@@ -35,17 +88,17 @@
 
 
 <!-- About Section Starts  -->
-<section class="about-section sec-padding">
+<section class="about-section sec-padding" id="about">
     <div class="container">
         <div class="section-title">
             <h2>about me </h2>
         </div>
         <div class="row">
-            <div class="about-img">
+            <!-- <div class="about-img">
                 <div class="img-box">
                     <img src="photocrop3-1.png" alt="About img" style="border-radius:0">
                 </div>
-            </div>
+            </div> -->
             <div class="about-text">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus provident sed explicabo dolores voluptatem facilis quidem expedita repellat doloremque, ab excepturi velit ipsa quibusdam quo esse deserunt vero, corrupti eos!</p>
                 <h3>Skills  </h3>
@@ -54,24 +107,294 @@
                     <div class="skill-item">css</div>
                     <div class="skill-item">Javascript</div>
                     <div class="skill-item">React</div>
-                    <div class="skill-item">ff</div>
                 </div>
 
                 <div class="about-tabs">
-                    <button type="button" class="tab-item" data-target="#education"></button>
-                    <button type ="button" class="tab-item" data-target="experience"></button>
+                    <button type="button" class="tab-item active" data-target="#education">education</button>
+                    <button type ="button" class="tab-item" data-target="#experience">experience</button>
 
                 </div>
+                <!-- Education Start -->
+                <div class="tab-content active" id="education">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">2010-2014 </span>
+                            <h4>bachelor of engineering( electronics and telecommunication)-<span> chattisgarh swami vivekanand technical university (India)  </span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique aliquam nam libero sed rerum, qui consequuntur officiis placeat vel tenetur tempore quisquam voluptate. Eaque aliquid beatae quasi perferendis exercitationem?</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2014-2015</span>
+                            <h4>Diploma in Financial Planning and Wealth Management-<span>Indian Institute Of Financial Planning(India)</span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique aliquam nam libero sed rerum, qui consequuntur officiis placeat vel tenetur tempore quisquam voluptate. Eaque aliquid beatae quasi perferendis exercitationem?</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2014-2016 </span>
+                            <h4>MBA (Finance)-<span>Bhartidasan University (India)</span></h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum similique aliquam nam libero sed rerum, qui consequuntur officiis placeat vel tenetur tempore quisquam voluptate. Eaque aliquid beatae quasi perferendis exercitationem?</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- Education Ends  -->
+                <!--Experience Starts  -->
+                <div class="tab-content" id="experience">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="date">
+                                    Feb 2022-till now 
+                            </span>
+                        <h4>Front End Developer-<span></span>Freelance </span></h4>
+                            <p>Created some projects as part of self learning.
+    <br></p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- experience Ends  -->
+
+                <a href="Khushboo Resume (1) (1)-1.pdf" target="_blank" class="btn">download cv</a>
+                <a href="#contact" class="btn link-item">contact me</a>
             </div>
             
         </div>
     </div>
 </section>
 <!-- About Section Ends  -->
+<!-- Portfolio Section Starts  -->
+<section class="portfolio-section sec-padding" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>recent work</h2>
+            </div>
+        </div>
+        <div class="row">
+                    <!-- portfolio item starts -->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="Parallax and Grid Webste.png" alt="portfolio item thumbnail" style="border-radius:0;">
+                            <h3 class="portfolio-item-title">Analog Clock</h3>
+                            <button type="button" class="btn view-project-btn">View Project</button>
+                            <div class="portfolio-item-details">
+                             <div class="description">
+
+                                <p> </p>
+                                </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Technologies Used-<span>Html,Css,Javascript</span></li>
+                                    <li>Role-<span>Frontend</span></li>
+                                    <li>View Online-<span><a href="https://khushbook-clockanalog.netlify.app/" target="_blank">Analog Clock Link </a></span></li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- portfolio item Ends -->
+<!-- portfolio item 2 starts -->
+<div class="portfolio-item" >
+    <div class="portfolio-item-thumbnail">
+        <img src="Parallax and Grid Webste.png" alt="portfolio item thumbnail" style="border-radius:0;">
+        <h3 class="portfolio-item-title">Tribute Page</h3>
+        <button type="button" class="btn view-project-btn">View Project</button>
+        <div class="portfolio-item-details">
+            <div class="description">
+
+            <p></p>
+           </div>
+        <div class="general-info">
+            <ul>
+                <li>Technologies Used-<span>Html,Css</span></li>
+                <li>Role-<span>Frontend</span></li>
+                <li>View Online-<span><a href="https://khushbooktributepage.netlify.app/" target="_blank">Tribute Page Link </a></span></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--  portfolio item 2 Ends -->
+<!-- portfolioitem 3 starts -->
+<div class="portfolio-item">
+    <div class="portfolio-item-thumbnail">
+        <img src="Parallax and Grid Webste.png" alt="portfolio item thumbnail" style="border-radius:0;">
+        
+        <h3 class="portfolio-item-title">education course website</h3>
+        
+        <button type="button" class="btn view-project-btn">View Project</button>
+        
+        <div class="portfolio-item-details">
+            <div class="description">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut nesciunt expedita ducimus accusantium voluptatibus, velit ab, excepturi, voluptates tenetur possimus dicta minima laborum. Quidem libero ipsam fugiat nemo quas.</p>
+           </div>
+        <div class="general-info">
+            <ul>
+                <li>Technologies Used-<span>Html,Css</span></li>
+                <li>Role-<span>Frontend</span></li>
+                <li>View Online-<span><a href="#" target="_blank">www.domain.com</a></span></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- portfoli item 3 ends  -->
+<!-- portfolio item 4 starts  -->
+<div class="portfolio-item">
+    <div class="portfolio-item-thumbnail">
+        <img src="Parallax and Grid Webste.png" alt="portfolio item thumbnail" style="border-radius:0;">
+        <h3 class="portfolio-item-title">education course website</h3>
+        <button type="button" class="btn view-project-btn">View Project</button>
+        <div class="portfolio-item-details">
+            <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut nesciunt expedita ducimus accusantium voluptatibus, velit ab, excepturi, voluptates tenetur possimus dicta minima laborum. Quidem libero ipsam fugiat nemo quas.</p>
+           </div>
+                
+        <div class="general-info">
+            <ul>
+                <li>Technologies Used-<span>Html,Css</span></li>
+                <li>Role-<span>Frontend</span></li>
+                <li>View Online-<span><a href="#" target="_blank">www.domain.com</a></span></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- portfolio item 4 ends -->
+<!-- portfolio item 5 starts -->
+<div class="portfolio-item">
+    <div class="portfolio-item-thumbnail">
+        <img src="Parallax and Grid Webste.png" alt="portfolio item thumbnail" style="border-radius:0;">
+        <h3 class="portfolio-item-title">education course website</h3>
+        <button type="button" class="btn view-project-btn">View Project</button>
+        <div class="portfolio-item-details">
+            <div class="description">
+            <p>cool5 dolor sit amet consectetur adipisicing elit. Unde aut nesciunt expedita ducimus accusantium voluptatibus, velit ab, excepturi, voluptates tenetur possimus dicta minima laborum. Quidem libero ipsam fugiat nemo quas.</p>
+        </div>
+        <div class="general-info">
+            <ul>
+                <li>Technologies Used-<span>Html,Css</span></li>
+                <li>Role-<span>Frontend</span></li>
+                <li>View Online-<span><a href="#" target="_blank">www.domain.com</a></span></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- portfolio item 5 ends  -->
+<!-- portfolio items 6 starts -->
+<div class="portfolio-item">
+    <div class="portfolio-item-thumbnail">
+        <img src="Parallax and Grid Webste.png" alt="portfolio item thumbnail" style="border-radius:0;">
+        <h3 class="portfolio-item-title">education course website</h3>
+        <button type="button" class="btn view-project-btn">View Project</button>
+        <div class="portfolio-item-details">
+            <div class="description">
+            <p>kkkkkkkkkkk</p> ipsum dolor sit amet consectetur adipisicing elit. Unde aut nesciunt expedita ducimus accusantium voluptatibus, velit ab, excepturi, voluptates tenetur possimus dicta minima laborum. Quidem libero ipsam fugiat nemo quas.</p>
+        </div>
+        <div class="general-info">
+            <ul>
+                <li>Technologies Used-<span>Html,Css</span></li>
+                <li>Role-<span>Frontend</span></li>
+                <li>View Online-<span><a href="#" target="_blank">www.domain.com</a></span></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+</div>
+<!-- portfolio item 6 ends  -->
+        </div>
+    </div>
+</section>
+<!-- Portfolio Section Ends  -->
+
+<!-- <!-Contact Section STarts -  --> 
+<section class="contact-section sec-padding" id="contact">
+    <div class="container">
+        <div class="row">
+                <div class="section-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="row">
+                    <div class="contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Name" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Email" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Subject" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                   <textarea placeholder="Message"class="input-control" required></textarea>
+                                </div>
+                                <button type="submit-btn" class="btn">send Message</button>
+                            </div>
+                        </form>
+                </div>
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <h3>Email </h3>
+                            <p>khushboo.khatwani92@gmail.com</p>
+                        </div>
+                       
+                        <div class="contact-info-item">
+                            <h3>Email </h3>
+                            <p>example@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>follow me  </h3>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/webdevkhushboo"target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                               
+
+                                <a href="https://github.com/khushi0909"target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Secton Ends  -->
 
         
     </div>
     <!-- Main Ends  -->
+    <!-- portfolio Item Details Popup Starts -->
+    <div class="portfolio-popup">
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <button type="button" class="btn pp-close"><i class='fa fa-window-close'></i><button>
+                    <div class="pp-thumbnail">
+                        <img src="Parallax and Grid Webste.png" alt="pp-thumbnail" ">
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="pp-body">
+                   
+                </div>
+
+             </div>
+         </div>
+
+
+    </div>
+    <!-- portfolio Item Details Item Ends-->
+
+    
     <script src="script.js"></script>
 </body>
 </html>
